@@ -127,14 +127,6 @@
         Stack 1                          Stack 1         Stack 2
         Task1 w/o Affinity              Task1 with Affinity
 
-
-        STEP 4: BACK BUTTON
-              (POP B)
-
-        Activity_A                       Activity_A
-        Stack 1                          Stack 1
-        Task1 w/o Affinity              Task1 with Affinity
-
         -->
     </application>
 
