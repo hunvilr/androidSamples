@@ -15,9 +15,9 @@
             </intent-filter>
         </activity>
         <!--        LanunchMode of All activites are standard -->
-<!--        <activity android:name=".Activity_B" android:launchMode="standard"/>-->
-<!--        <activity android:name=".Activity_C" android:launchMode="standard"/>-->
-<!--        <activity android:name=".Activity_D" android:launchMode="standard"/>-->
+        <activity android:name=".Activity_B" android:launchMode="standard"/>
+        <activity android:name=".Activity_C" android:launchMode="standard"/>
+        <activity android:name=".Activity_D" android:launchMode="standard"/>
 
         <!--        LanunchMode of Activity_B is singleTop -->
 <!--                <activity android:name=".Activity_B" android:launchMode="singleTop"/>-->
@@ -122,7 +122,7 @@
                 (POP C)
 
         Activity_B
-        Activity_D                       Activity_D     
+        Activity_D                       Activity_D
         Activity_A                       Activity_A      Activity_B
         Stack 1                          Stack 1         Stack 2
         Task1 w/o Affinity              Task1 with Affinity
