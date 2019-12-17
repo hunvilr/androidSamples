@@ -142,6 +142,8 @@
         singleInstance Task1 w/o Affinity                           singleInstance Task1 with Affinity
         visually there is only 1 task seen
         The toggle happens inside the task
+        singleInstance will have the only activity in its
+        task with or without taskaffinity
         -->
     </application>
 
