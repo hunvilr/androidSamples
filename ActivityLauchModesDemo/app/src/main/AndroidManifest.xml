@@ -15,9 +15,9 @@
             </intent-filter>
         </activity>
         <!--        LanunchMode of All activites are standard -->
-        <activity android:name=".Activity_B" android:launchMode="standard"/>
-        <activity android:name=".Activity_C" android:launchMode="standard"/>
-        <activity android:name=".Activity_D" android:launchMode="standard"/>
+<!--        <activity android:name=".Activity_B" android:launchMode="standard"/>-->
+<!--        <activity android:name=".Activity_C" android:launchMode="standard"/>-->
+<!--        <activity android:name=".Activity_D" android:launchMode="standard"/>-->
 
         <!--        LanunchMode of Activity_B is singleTop -->
 <!--                <activity android:name=".Activity_B" android:launchMode="singleTop"/>-->
@@ -40,13 +40,16 @@
         <!--        <activity android:name=".Activity_D" android:launchMode="standard"/>-->
 
 
+                <activity android:name=".Activity_B" android:launchMode="singleInstance" android:taskAffinity="com.some.new.taskAffinity"/>
+                <activity android:name=".Activity_C" android:launchMode="standard"/>
+                <activity android:name=".Activity_D" android:launchMode="standard"/>
+
         <!--
 
+        Example of Activity_A -> Activity_B -> Activity_C -> Activity_B -> Back with below launchmodes
         <activity android:name=".Activity_B" android:launchMode="singleTask"/>
         <activity android:name=".Activity_C" android:launchMode="standard"/>
         <activity android:name=".Activity_D" android:launchMode="standard"/>
-
-        Activity_A -> Activity_B -> Activity_C -> Activity_B -> Back
 
         STEP 1: Activity_A
 
@@ -85,13 +88,7 @@
         Stack 1                          Stack 1
         Task1 w/o Affinity              Task1 with Affinity
 
-
-
-        <activity android:name=".Activity_B" android:launchMode="singleTask"/>
-        <activity android:name=".Activity_C" android:launchMode="standard"/>
-        <activity android:name=".Activity_D" android:launchMode="standard"/>
-
-        Activity_D -> Activity_B -> Activity_C -> Activity_B
+        Example of Activity_D -> Activity_B -> Activity_C -> Activity_B Contd from previous
 
 
         Contd STEP 1: Activity_D
@@ -127,6 +124,24 @@
         Stack 1                          Stack 1         Stack 2
         Task1 w/o Affinity              Task1 with Affinity
 
+
+        Example of Activity_A -> Activity_B -> Activity_C -> Activity_B -> Activity_D with launchmode SingleTask with and without taskAffinity
+
+        Activity_D
+        Activity_B                                                  Activity_D
+        Activity_A                                  Activity_A      Activity_B
+        Stack 1                                     Stack 1         Stack 2
+        SingleTask Task1 w/o Affinity              SingleTask Task1 with Affinity
+
+        Example of Activity_A -> Activity_B -> Activity_C -> Activity_B -> Activity_D with launchmode singleInstance with and without taskAffinity
+
+        Activity_D                                                  Activity_D
+        Activity_C                                                  Activity_C
+        Activity_A      Activity_B                                  Activity_B      Activity_A
+        Stack 1         Stack2                                      Stack 1         Stack 2
+        singleInstance Task1 w/o Affinity                           singleInstance Task1 with Affinity
+        visually there is only 1 task seen
+        The toggle happens inside the task
         -->
     </application>
 
