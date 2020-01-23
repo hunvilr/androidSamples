@@ -1,0 +1,1 @@
+1)first create an adapter with number of columns and vertical

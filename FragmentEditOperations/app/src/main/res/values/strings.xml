@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Practice2</string>
+    <string name="app_name">FragmentEditOperations</string>
     <string name="fragment1">Fragment1</string>
     <string name="fragment2">Fragment2</string>
 </resources>
