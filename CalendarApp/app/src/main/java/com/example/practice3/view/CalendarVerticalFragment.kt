@@ -47,6 +47,17 @@ class CalendarVerticalFragment : Fragment() {
         // Inflate the layout for this fragment
         val binding = FragmentCalendarVerticalBinding.inflate(inflater)
         binding.recyclerView?.let {
+            // [] [] [] [] [] [] []  NUMBER_OF_COLUMNS (span count) = 7 and orientation vertical
+            // Span count indicates how many columns or rows you have divided, for vertical columns
+            // For the 0th item how many spans you need, we need the entire match parent, so set it same as NUMBER_OF_COLUMNS span count
+            //        override fun getSpanSize(position: Int): Int {
+            //            var spanSize = 0
+            //            when(position) {
+            //                0 -> spanSize = 7
+            //                else -> spanSize = 1
+            //            }
+            //            return spanSize
+            //        }
             val gridLayoutManager = GridLayoutManager(context, NUMBER_OF_COLUMNS, RecyclerView.VERTICAL, false)
             gridLayoutManager.spanSizeLookup = adapter.spanSizeLookup
             it.layoutManager = gridLayoutManager
