@@ -1,10 +1,13 @@
 package com.example.connectorfour.ui.adapter
 
+import android.content.Context
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.connectorfour.R
 import com.example.connectorfour.ui.model.Piece
@@ -17,22 +20,32 @@ import com.example.connectorfour.ui.model.Piece
  *
  * @param dataSet String[] containing the data to populate views to be used by RecyclerView.
  */
-class CustomAdapter(private val dataSet: Array<Piece>) :
+class CustomAdapter(private val context: Context?,
+    private val dataSet: Array<Piece>) :
     RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
     /**
      * Provide a reference to the type of views that you are using (custom ViewHolder)
      */
-    class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {
-        val textView: TextView
+    class ViewHolder(v: View,  val context: Context?) : RecyclerView.ViewHolder(v) {
+        val button: Button
 
         init {
             // Define click listener for the ViewHolder's View.
             v.setOnClickListener {
                 Log.d(TAG, "ViewHolder Element $adapterPosition clicked.")
                 Log.d(TAG, " ViewHolder info  set. ")
+                navigateToBottom(adapterPosition, it)
             }
-            textView = v.findViewById(R.id.textView)
+            button = v.findViewById(R.id.button)
+        }
+
+        private fun navigateToBottom(adapterPosition: Int, view: View) {
+            val colIndex = adapterPosition % 7      //between 0 to SPAN_COUNT
+            val rowIndex = adapterPosition / 7     // total elements
+            Log.d(TAG, "ViewHolder Element $rowIndex $colIndex clicked.")
+
+            context?.let{view.setBackgroundColor(ContextCompat.getColor(context, R.color.green_color))}
         }
     }
 
@@ -42,7 +55,7 @@ class CustomAdapter(private val dataSet: Array<Piece>) :
         val v = LayoutInflater.from(viewGroup.context)
             .inflate(R.layout.layout_row_column_item, viewGroup, false)
 
-        return ViewHolder(v)
+        return ViewHolder(v, context)
     }
 
     // Replace the contents of a view (invoked by the layout manager)
@@ -54,12 +67,8 @@ class CustomAdapter(private val dataSet: Array<Piece>) :
         val piece = dataSet[position]
         val info = piece.x.toString() + " " + piece.y.toString()
         Log.d(TAG, "info $info set. ")
-        viewHolder.textView.text = piece.x.toString() + " " + piece.y.toString()
+        viewHolder.button.text = piece.x.toString() + " " + piece.y.toString()
 
-        viewHolder.textView.setOnClickListener {
-            Log.d(TAG, "onBindViewHolder Element $position clicked.")
-            Log.d(TAG, "onBindViewHolder info  set. ")
-        }
     }
 
     // Return the size of your dataset (invoked by the layout manager)

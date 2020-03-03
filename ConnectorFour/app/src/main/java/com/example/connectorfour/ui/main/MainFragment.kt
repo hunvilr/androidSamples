@@ -22,7 +22,7 @@ class MainFragment : Fragment() {
     private lateinit var viewModel: MainViewModel
 
     val adapter by lazy {
-        CustomAdapter(viewModel.items)
+        CustomAdapter(context, viewModel.items)
     }
 
     override fun onCreateView(
@@ -42,10 +42,10 @@ class MainFragment : Fragment() {
             //Since we have 2 itemdecoration below getItemOffsets() is called twice,
             // once with top = 10 and second time with right = 10, based on the position,
             // the outRect is set
-            //skip first 7 which is the first row, add 10px space to every row there after vertically
-            it.addItemDecoration(SpaceItemDecoration.create(top = 10, skipTop = 7))
-            //Dont skip any, add 10px space from first item horizontally to the right
-            it.addItemDecoration(SpaceItemDecoration.create(right = 10))
+//            //skip first 7 which is the first row, add 10px space to every row there after vertically
+//            it.addItemDecoration(SpaceItemDecoration.create(top = 10, skipTop = 7))
+//            //Dont skip any, add 10px space from first item horizontally to the right
+//            it.addItemDecoration(SpaceItemDecoration.create(left=5, right = 5))
             it.adapter = adapter
         }
         return binding.root
