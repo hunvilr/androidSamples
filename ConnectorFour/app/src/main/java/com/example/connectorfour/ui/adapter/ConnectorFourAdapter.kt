@@ -27,7 +27,7 @@ class CustomAdapter(private val context: Context?,
     /**
      * Provide a reference to the type of views that you are using (custom ViewHolder)
      */
-    class ViewHolder(v: View,  val context: Context?) : RecyclerView.ViewHolder(v) {
+    class ViewHolder(v: View,  val context: Context?, val dataSet: Array<Piece>) : RecyclerView.ViewHolder(v) {
         val button: Button
 
         init {
@@ -45,7 +45,39 @@ class CustomAdapter(private val context: Context?,
             val rowIndex = adapterPosition / 7     // total elements
             Log.d(TAG, "ViewHolder Element $rowIndex $colIndex clicked.")
 
-            context?.let{view.setBackgroundColor(ContextCompat.getColor(context, R.color.green_color))}
+            //context?.let{view.setBackgroundColor(ContextCompat.getColor(context, R.color.green_color))}
+            val positionToInsert = canInsert(rowIndex, colIndex)
+        }
+
+        fun canInsert(rowIndex: Int, colIndex: Int) : Int{
+            // rowIndex = 0, colIndex = 6   7th element
+            // rowIndex = 1, colIndex = 5   13th element
+            // rowIndex = 1, colIndex = 6   14th element   rowIndex % span_count + colIndex
+
+            //check the col for the piece
+            //if the row can be dec upto the !piece.occupied
+            val clickedPosition = rowIndex * 7 + colIndex
+            val current = dataSet[clickedPosition]
+            // we found the column, now dec the row
+            for(i in 5 downTo 0) {
+                //check for every row from bottom to top if it is occupied
+                val position = i * 7 + current.y
+                val piece = dataSet[position]
+                if(!piece.isOccupied) {
+                    //it is empty, we can allocate the piece to the color of the player
+                    piece.isOccupied = true
+                    Log.d(TAG, "ViewHolder piece.isOccupied true. $position")
+                    return position
+                }
+            }
+            //if we reach here we were not able to insert a piece in the board
+            return -1
+        }
+    }
+
+    fun canInsert(applyPosition: Int) {
+        if(applyPosition != -1) {
+            notifyItemChanged(applyPosition);
         }
     }
 
@@ -55,7 +87,7 @@ class CustomAdapter(private val context: Context?,
         val v = LayoutInflater.from(viewGroup.context)
             .inflate(R.layout.layout_row_column_item, viewGroup, false)
 
-        return ViewHolder(v, context)
+        return ViewHolder(v, context, dataSet)
     }
 
     // Replace the contents of a view (invoked by the layout manager)

@@ -1,9 +1,18 @@
 package com.example.connectorfour.ui.model
 
+import androidx.databinding.Bindable
+
 class Piece(val x: Int, val y: Int) {
-    enum class COLOR {
+    enum class Piece_COLOR {
+        GRAY,
         GREEN,
-        YELLOW,
         RED
     }
+
+    var isOccupied: Boolean = false
+        set(value) {
+            if (field != value) {
+                field = value
+            }
+        }
 }

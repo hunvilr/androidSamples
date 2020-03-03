@@ -41,4 +41,28 @@ class Board {
 //            }
 //        }
 //    }
+
+    fun canInsert(rowIndex: Int, colIndex: Int) : Boolean{
+        // rowIndex = 0, colIndex = 6   7th element
+        // rowIndex = 1, colIndex = 5   13th element
+        // rowIndex = 1, colIndex = 6   14th element   rowIndex % span_count + colIndex
+
+        //check the col for the piece
+        //if the row can be dec upto the !piece.occupied
+        val clickedPosition = rowIndex * 7 + colIndex
+        val current = mat[clickedPosition]
+        // we found the column, now dec the row
+        for(i in 5 downTo 0) {
+            //check for every row from bottom to top if it is occupied
+            val position = i * 7 + current.y
+            val piece = mat[position]
+            if(!piece.isOccupied) {
+                //it is empty, we can allocate the piece to the color of the player
+                piece.isOccupied = true
+                return true
+            }
+        }
+        //if we reach here we were not able to insert a piece in the board
+        return false
+    }
 }
