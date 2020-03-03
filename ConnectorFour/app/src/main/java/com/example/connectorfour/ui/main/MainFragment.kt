@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.connectorfour.R
 import com.example.connectorfour.databinding.MainFragmentBinding
-import com.example.connectorfour.ui.adapter.ConnectorFourAdapter
+import com.example.connectorfour.ui.adapter.CustomAdapter
 
 class MainFragment : Fragment() {
 
@@ -22,7 +22,7 @@ class MainFragment : Fragment() {
     private lateinit var viewModel: MainViewModel
 
     val adapter by lazy {
-        ConnectorFourAdapter(viewModel.NUMBER_OF_ROWS, viewModel.NUMBER_OF_COLUMNS, viewModel.items, context)
+        CustomAdapter(viewModel.items)
     }
 
     override fun onCreateView(
@@ -36,8 +36,17 @@ class MainFragment : Fragment() {
             val gridLayoutManager : GridLayoutManager? = GridLayoutManager(context, viewModel.NUMBER_OF_COLUMNS)
             //gridLayoutManager?.spanSizeLookup = adapter.spanSizeLookup
             it.layoutManager = gridLayoutManager
-            it.adapter = adapter
             it.addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
+            it.addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.HORIZONTAL))
+
+            //Since we have 2 itemdecoration below getItemOffsets() is called twice,
+            // once with top = 10 and second time with right = 10, based on the position,
+            // the outRect is set
+            //skip first 7 which is the first row, add 10px space to every row there after vertically
+            it.addItemDecoration(SpaceItemDecoration.create(top = 10, skipTop = 7))
+            //Dont skip any, add 10px space from first item horizontally to the right
+            it.addItemDecoration(SpaceItemDecoration.create(right = 10))
+            it.adapter = adapter
         }
         return binding.root
     }

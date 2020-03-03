@@ -10,16 +10,35 @@ class Board {
 //        }
 //    }
 
-    var mat = arrayOf<Array<Piece>>()
+//    var mat = arrayOf<Array<Piece>>()
+//
+//    init {
+//        for (i in 0..5) {
+//            var subArray = arrayOf<Piece>()
+//            for (j in 0..6) {
+//                subArray  += Piece(i, j)
+//            }
+//            mat += subArray
+//        }
+//    }
+
+    var mat = arrayOf<Piece>()
 
     init {
         for (i in 0..5) {
-            var subArray = arrayOf<Piece>()
             for (j in 0..6) {
-                subArray  += Piece(i, j)
+                mat  += Piece(i, j)
             }
-            mat += subArray
         }
     }
 
+//    var mat = arrayOf<String>()
+//
+//    init {
+//        for (i in 0..5) {
+//            for (j in 0..6) {
+//                mat  += String("$i  $j".toCharArray())
+//            }
+//        }
+//    }
 }
