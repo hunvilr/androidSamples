@@ -4,13 +4,9 @@ import android.graphics.Color
 import androidx.core.content.ContextCompat
 import androidx.databinding.Bindable
 
-class Piece(val x: Int, val y: Int) {
+class Piece(var x: Int, var y: Int) {
+    var position = -1
     var chipColor = Color.GRAY
-        set(value) {
-            if(isOccupied){
-                field = Color.GREEN
-            }
-        }
     var isOccupied: Boolean = false
         set(value) {
             if (field != value) {

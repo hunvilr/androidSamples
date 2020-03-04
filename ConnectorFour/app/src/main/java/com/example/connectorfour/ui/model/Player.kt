@@ -2,6 +2,6 @@ package com.example.connectorfour.ui.model
 
 import android.graphics.Color
 
-class Player(val color: Int) {
+class Player(val chipColor: Int) {
 
 }

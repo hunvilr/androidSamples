@@ -1,12 +1,17 @@
 package com.example.connectorfour.ui.model
 
 import android.graphics.Color
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
+import com.example.connectorfour.ui.main.BoardCell
+import com.example.connectorfour.ui.main.MainViewModel
 
 class Board {
-    val player1 : Player = Player(Color.GREEN)
-    val player2 : Player = Player(Color.RED)
-    val playerTurn = MutableLiveData<Boolean>()
+    var currentPlayer = MutableLiveData<Int>()
+    val players = arrayOf(
+        Player(Color.GREEN),
+        Player(Color.RED)
+    )
 //    init {
 //        for(i in 0..12) {
 //            mat += Piece(i, i)
@@ -33,6 +38,7 @@ class Board {
                 mat  += Piece(i, j)
             }
         }
+        currentPlayer.value = 1
     }
 
 //    var mat = arrayOf<String>()
@@ -44,14 +50,8 @@ class Board {
 //            }
 //        }
 //    }
-
-    fun canInsert(rowIndex: Int, colIndex: Int) : Boolean{
-        // rowIndex = 0, colIndex = 6   7th element
-        // rowIndex = 1, colIndex = 5   13th element
+    fun canInsert(rowIndex: Int, colIndex: Int) : Piece?{
         // rowIndex = 1, colIndex = 6   14th element   rowIndex % span_count + colIndex
-
-        //check the col for the piece
-        //if the row can be dec upto the !piece.occupied
         val clickedPosition = rowIndex * 7 + colIndex
         val current = mat[clickedPosition]
         // we found the column, now dec the row
@@ -62,10 +62,13 @@ class Board {
             if(!piece.isOccupied) {
                 //it is empty, we can allocate the piece to the color of the player
                 piece.isOccupied = true
-                return true
+                piece.x = i
+                piece.y = current.y
+                piece.position = position
+                return piece
             }
         }
         //if we reach here we were not able to insert a piece in the board
-        return false
+        return null
     }
 }
