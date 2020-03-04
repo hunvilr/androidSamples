@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
+        <data>
+                <variable
+                    name="viewModel"
+                    type="com.example.connectorfour.ui.main.MainViewModel" />
+                <variable
+                    name="position"
+                    type="Integer" />
+                <variable
+                    name="clickListener"
+                    type="android.view.View.OnClickListener" />
+                <variable
+                    name="piece"
+                    type="com.example.connectorfour.ui.model.Piece" />
+                <import type="android.graphics.Color"/>
+        </data>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="72dp"
+    android:layout_height="wrap_content"
+    android:onClick="@{() -> viewModel.onItemClick(position)}"
     android:gravity="center_vertical">
 
 <!--    <TextView-->
@@ -11,14 +28,16 @@
 <!--        android:text="Element"/>-->
         <Button
             android:id="@+id/button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:textSize="50dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/zero"
             android:textAlignment="center"
-            android:background="@android:color/darker_gray"
+            android:background="@{piece.chipColor}"
+            android:enabled="true"
+            android:clickable="true"
             />
 </FrameLayout>
+</layout>
 <!--<?xml version="1.0" encoding="utf-8"?>-->
 <!--<layout xmlns:android="http://schemas.android.com/apk/res/android"-->
 <!--    xmlns:app="http://schemas.android.com/apk/res-auto">-->

@@ -6,12 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.connectorfour.R
 import com.example.connectorfour.databinding.MainFragmentBinding
-import com.example.connectorfour.ui.adapter.CustomAdapter
+import com.example.connectorfour.ui.adapter.ConnectorFourAdapter
 
 class MainFragment : Fragment() {
 
@@ -22,7 +21,11 @@ class MainFragment : Fragment() {
     private lateinit var viewModel: MainViewModel
 
     val adapter by lazy {
-        CustomAdapter(context, viewModel.items)
+        ConnectorFourAdapter(viewModel, viewModel.items)
+    }
+
+    private fun manageState(it: Int) {
+        adapter.canInsert(it)
     }
 
     override fun onCreateView(
@@ -48,6 +51,7 @@ class MainFragment : Fragment() {
 //            it.addItemDecoration(SpaceItemDecoration.create(left=5, right = 5))
             it.adapter = adapter
         }
+        viewModel.positionToUpdate.observe(this, Observer{ manageState(it) })
         return binding.root
     }
 }

@@ -1,9 +1,12 @@
 package com.example.connectorfour.ui.model
 
-class Board {
-    val player1 : Player = Player()
-    val player2 : Player = Player()
+import android.graphics.Color
+import androidx.lifecycle.MutableLiveData
 
+class Board {
+    val player1 : Player = Player(Color.GREEN)
+    val player2 : Player = Player(Color.RED)
+    val playerTurn = MutableLiveData<Boolean>()
 //    init {
 //        for(i in 0..12) {
 //            mat += Piece(i, i)

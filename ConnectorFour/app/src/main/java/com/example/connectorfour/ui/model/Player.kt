@@ -1,5 +1,7 @@
 package com.example.connectorfour.ui.model
 
-class Player {
+import android.graphics.Color
+
+class Player(val color: Int) {
 
 }
