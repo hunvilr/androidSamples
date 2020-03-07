@@ -33,8 +33,6 @@
             android:text="@string/zero"
             android:textAlignment="center"
             android:background="@{piece.chipColor}"
-            android:enabled="true"
-            android:clickable="true"
             />
 </FrameLayout>
 </layout>

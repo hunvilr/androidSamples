@@ -10,12 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfeb5b6e-caa0-4896-9d72-f88690552fff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ConnectorFour/app/src/main/java/com/example/connectorfour/ui/adapter/ConnectorFourAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../ConnectorFour/app/src/main/java/com/example/connectorfour/ui/adapter/ConnectorFourAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConnectorFour/app/src/main/java/com/example/connectorfour/ui/main/MainFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../ConnectorFour/app/src/main/java/com/example/connectorfour/ui/main/MainFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConnectorFour/app/src/main/java/com/example/connectorfour/ui/main/MainViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../ConnectorFour/app/src/main/java/com/example/connectorfour/ui/main/MainViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConnectorFour/app/src/main/java/com/example/connectorfour/ui/model/Board.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../ConnectorFour/app/src/main/java/com/example/connectorfour/ui/model/Board.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConnectorFour/app/src/main/java/com/example/connectorfour/ui/model/Piece.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../ConnectorFour/app/src/main/java/com/example/connectorfour/ui/model/Piece.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConnectorFour/app/src/main/java/com/example/connectorfour/ui/model/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../ConnectorFour/app/src/main/java/com/example/connectorfour/ui/model/Player.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

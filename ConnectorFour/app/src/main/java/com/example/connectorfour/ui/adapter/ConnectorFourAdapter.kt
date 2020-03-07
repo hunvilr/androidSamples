@@ -11,6 +11,7 @@ import com.example.connectorfour.databinding.LayoutRowColumnItemBinding
 import com.example.connectorfour.ui.main.MainViewModel
 import com.example.connectorfour.ui.model.Piece
 import com.example.connectorfour.BR
+import kotlinx.android.synthetic.main.layout_row_column_item.view.*
 
 
 /**
@@ -54,9 +55,19 @@ class ConnectorFourAdapter(private val viewModel: MainViewModel,
 
     // Replace the contents of a view (invoked by the layout manager)
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-        viewHolder.binding.button.setOnClickListener {
-            Log.d(TAG, "onBindViewHolder item position clicked $position")
-            viewModel.navigateToBottom(position)
+//        viewHolder.binding.button.setOnClickListener {
+//            Log.d(TAG, "onBindViewHolder item position clicked $position")
+//            viewModel.navigateToBottom(position)
+//        }
+        if(position < viewModel.NUMBER_OF_COLUMNS) {
+            viewHolder.itemView.button.text = ""
+            viewHolder.itemView.button.setOnClickListener {
+                Log.d(TAG, "onBindViewHolder item position clicked $position")
+                viewModel.navigateToBottom(position)
+            }
+        } else {
+            viewHolder.itemView.button.text = "0"
+            viewHolder.itemView.button.isClickable = false
         }
         viewHolder.bind(viewModel, position)
     }
