@@ -10,8 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfeb5b6e-caa0-4896-9d72-f88690552fff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ConnectorFour/app/src/main/java/com/example/connectorfour/ui/main/MainViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../ConnectorFour/app/src/main/java/com/example/connectorfour/ui/main/MainViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,11 +126,6 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1677" />
-    <option name="height" value="950" />
-  </component>
   <component name="ProjectId" id="1Ydu84GhUbEvROg6BYSwN9maiqe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -230,7 +225,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
