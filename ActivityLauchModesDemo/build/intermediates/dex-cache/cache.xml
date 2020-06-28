@@ -3,138 +3,138 @@
 
     <item
         is-multidex="false"
-        jar="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.1_2bba52194fe7ee369004d029a30834d7244f9466.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_4d275637d6cf46bef7edb693dbccaf3433782218.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_f457f5dcf06c2e23adb44381b9d3c0bfca856e10.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_f01a6cf6b10713faa848f6638b920bc341d67f05.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_4da4d668b8eb9f59dfc7f55ee85a7dc815cef713.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/m976023/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_401cfc741173e888bb48f58cbc98188765ce9358.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jar="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_836dd7de04947b1cff7927b3788adfb8082cfd17.jar" />
+        <dex dex="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_ae320c546f6419033386d84666ffd3cbe447bfd8.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jar="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_4ac974fdd590802578919b7c34b046b3583f889b.jar" />
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_bbd0ee93429182a2df5af4e3357d5b52a441c7e0.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
-        <dex dex="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_3957a9494bff1b228fc0c59dfea32ee47e58fcb8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
-        <dex dex="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_ac57d52f41fc319b85a694459c15af307fea2e64.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_f0d3c1da383efe05e47ea046f9393ecc848488d3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jar="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
-        <dex dex="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_feb2ff1b341d8f42fe6bbb59ef487d9c3c43d156.jar" />
+        <dex dex="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_ac4907e3c4696b16f7ab52af04c32bac43d8632c.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jar="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_c9590d63942c6f266275483ec7019f00724b9463.jar" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_0529548da8c06ab772f71d6a37c414fcca266369.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_82b9f23dd7124a91e6b3f3697fa5d8b24d9f0e43.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jar="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
-        <dex dex="/Users/m976023/Documents/selfpracticeacndroid/simpleApp/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.1_ac829090837ad4f71dcef33d8a3c912bc0ce775e.jar" />
+        <dex dex="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.1_e6a5a6887691803bd55c5b8ac6f97ab3dd60dee8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_1856de5569c29cf25c61ea0f29125fa18b1bc104.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_5d6f815e040fc8a7760b8aa1b7bdcf765392603b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_88150071a94c6e02992d333a48411c1424640f63.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_e1ad73f8f0c2c4c5d63dc561426d83849922b638.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.1_20aa7f788a4f592579e6c053ffc08ea84ed6894c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_19136a671dd92e5ebbeb18b058dc60f7499b5125.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_815a2f30b50f5c62a483cee097af163f2a8aef6c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_5578f0d6fd0e27b22715d8f85e5f95549d03c81d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_7ae94e5320e229586415ba7ec0f1e61ebc30dca6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hrodrigues/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/25.0.1/a09194311f8f89c3e6db09d79f50897a889d615e/support-annotations-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/Users/hrodrigues/Documents/androidSamples/ActivityLauchModesDemo/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_29d4e64d026e7cd1124a7872bd871334ddddbc47.jar" />
     </item>
 
 </items>
